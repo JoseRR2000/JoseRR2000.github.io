@@ -1,0 +1,239 @@
+/*Reseteo propiedades*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**LAYOUT**/
+
+/* display/position/float */
+
+header {
+    border: solid 2px;
+}
+
+h1 {
+    color: green;
+}
+
+* {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+
+
+nav {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav li{
+    display: inline-block;
+    margin: 2%;
+    border: solid 2px;
+    padding: 10px; 
+    overflow: hidden;
+}
+
+nav ul ul li {
+    float: none;
+    border: none;
+    line-height: 100%;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+nav ul ul {
+    float:none;
+    display: none;
+    width: 220px;
+}
+
+nav ul ul a {
+    padding: 10px 15px;
+    color: red;
+    font-weight: bold;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+}
+
+header img {
+    position: relative;
+}
+
+#img_1{
+    padding-left: 2%;
+    width: 10%;
+    top: 5em;
+}
+
+#img_2{
+    left: 92%;
+    bottom: 8em;
+} 
+
+#img_3{
+    left: 93%;
+    bottom: 8em;
+}
+
+.checkbtn {
+    display: none;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: 2em;
+}
+
+#check {
+    display: none;
+}
+
+.flexsearch{
+    position: relative;
+    left: 80%;
+    bottom: 5em;
+}
+
+article h1 {
+    text-align: center;
+    padding: 2%;
+}
+
+section {
+    text-align: center;
+    padding: 2%;
+}
+
+#nuestraHistoria {
+    margin-right: 50%;
+    margin-top: 1%;
+    padding-top: 2%;
+    background-color: black;
+}
+
+#nuestraHistoria h1 {
+    font-size: 40px;
+    color: white;
+}
+
+#nuestraHistoria a:hover {
+    background-color: red;
+}
+
+#sobreNosotros {
+    position: relative;
+    margin-left: 50%;
+    bottom: 13.6em;
+    background-image: url(./Images/pina.jpeg);
+}
+
+#sobreNosotros h1 {
+    font-size: 40px;
+    background-color: white;
+}
+
+#sobreNosotros p {
+    background-color: white;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#contactanos {
+    position: relative;
+    right: 10%;
+    max-width: 50%;
+    height: 20em;
+    border: 2px solid;
+    background-color: black;
+}
+
+#contactanos h1 {
+    font-size: 40px;
+}
+
+#contactanos p {
+    color: white;
+}
+
+#visitanos {
+    position: relative;
+    bottom: 20em;
+    border: 2px solid;
+    max-width: 35%;
+    left: 40%;
+    height: 20em;
+    background-color: grey;
+    color: white;
+}
+
+#visitanos h1 {
+    font-size: 40px;
+}
+
+#cuentanos {
+    position: relative;
+    left: 75%;
+    bottom: 40em;
+    max-width: 30%;
+    height: 20em;
+    border: 2px solid;
+    background-color: green;
+
+}
+
+.contacto {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#cuentanos h1 {
+    font-size: 40px;
+    color: black;
+}
+
+#inputMensaje {
+    position: relative;
+    padding-top: 5%;
+}
+
+#enviar {
+    position: relative;
+    padding-top: 2%;
+}
+
+/*RESPONSIVE*/
+
+/*TABLETS*/
+@media (max-width: 952px) {
+    nav ul a {
+        font-size: 12px;
+    }
+    #img1 {
+        padding-left: 1%;
+    }
+}
+
+/*MOVILES*/
+@media (max-width: 858px) {
+    nav ul {
+        font-size: 12px;
+    }
+}
+
